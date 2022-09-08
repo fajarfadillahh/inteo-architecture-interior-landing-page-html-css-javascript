@@ -1,8 +1,8 @@
-// === FONT GOOGLE ===
+// ===== FONT GOOGLE =====
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
 
-// === VARIABLE CSS CLASS ===
+// ===== VARIABLE CSS CLASS =====
 // header height
 $header-height: 6rem;
 
@@ -45,7 +45,7 @@ $transition-400: 0.4s;
 $leading-title: 140%;
 $leading-text: 180%;
 
-// === RESET & BASE ===
+// ===== RESET & BASE =====
 * {
   padding: 0;
   margin: 0;
@@ -80,7 +80,7 @@ img {
   height: auto;
 }
 
-// === REUSABLE CSS CLASS ===
+// ===== REUSABLE CSS CLASS =====
 .section {
   padding: 8rem 0 4rem;
 
@@ -127,7 +127,7 @@ img {
   gap: 0.5em;
   padding: 1rem 2.5em;
   background-color: $brown-color;
-  font-size: $font-semibold;
+  font-weight: $font-semibold;
   text-transform: uppercase;
   color: $white-color;
 }
@@ -140,4 +140,77 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+// ===== HEADER SECTION =====
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white-color;
+  z-index: $z-fixed;
+  transition: $transition-400;
+
+  &__container {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 85px;
+  }
+
+  &__menu {
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      width: 80%;
+      top: 7rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2rem;
+      background-color: $brown-color;
+      transition: $transition-400;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+
+    // show menu
+    &.show-menu {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    color: $white-color;
+
+    &:hover {
+      color: #dddddd;
+    }
+  }
+
+  &__button {
+    margin-top: 1.5rem;
+    background-color: $white-color;
+    color: $brown-color;
+  }
+
+  &__toggle {
+    display: inline-flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $black-color;
+  }
 }
