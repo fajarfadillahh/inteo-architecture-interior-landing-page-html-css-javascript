@@ -85,6 +85,7 @@ img {
   padding: 8rem 0 4rem;
 
   &-title {
+    font-size: 48px;
     font-family: $font-title;
     font-weight: $font-semibold;
     color: $black-color;
@@ -212,5 +213,46 @@ img {
     font-size: 1.5rem;
     cursor: pointer;
     color: $black-color;
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  padding-top: 8rem;
+
+  &__wrapper {
+    display: grid;
+    gap: 5rem;
+  }
+
+  &__container {
+    position: relative;
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: -145px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: $z-normal;
+
+    &-icon {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &__overlay {
+    position: relative;
+    height: 640px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70%;
   }
 }
