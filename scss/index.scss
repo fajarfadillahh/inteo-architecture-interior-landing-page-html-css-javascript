@@ -42,7 +42,7 @@ $z-fixed: 100;
 $transition-400: 0.4s;
 
 // line-height
-$leading-title: 140%;
+$leading-title: 120%;
 $leading-text: 180%;
 
 // ===== RESET & BASE =====
@@ -254,5 +254,32 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: 70%;
+  }
+}
+
+// ===== AWARDS SECTION =====
+.awards {
+  padding: 2.5rem 0;
+  background-color: $black-color;
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 2rem;
+  }
+
+  &__content {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &-icon {
+      width: 80px;
+    }
+
+    &-text {
+      font-size: 18px;
+      color: rgba($color: #ffffff, $alpha: 0.7);
+    }
   }
 }
