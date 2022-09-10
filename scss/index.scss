@@ -299,7 +299,10 @@ img {
 
 // ===== METRICS SECTION =====
 .metrics {
-  padding-bottom: 4rem;
+  &__container {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $grey-color;
+  }
 
   &__group {
     display: grid;
