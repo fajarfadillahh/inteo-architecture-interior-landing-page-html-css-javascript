@@ -296,3 +296,32 @@ img {
     justify-self: center;
   }
 }
+
+// ===== METRICS SECTION =====
+.metrics {
+  padding-bottom: 4rem;
+
+  &__group {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-number {
+      font-family: $font-title;
+      font-size: 56px;
+      font-weight: $font-semibold;
+      color: $black-color;
+    }
+
+    &-text {
+      text-transform: uppercase;
+      color: $grey-color;
+    }
+  }
+}
