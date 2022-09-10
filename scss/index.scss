@@ -299,10 +299,7 @@ img {
 
 // ===== METRICS SECTION =====
 .metrics {
-  &__container {
-    padding-bottom: 4rem;
-    border-bottom: 1px solid $grey-color;
-  }
+  padding-bottom: 4rem;
 
   &__group {
     display: grid;
@@ -325,6 +322,46 @@ img {
     &-text {
       text-transform: uppercase;
       color: $grey-color;
+    }
+  }
+}
+
+// ===== SERVICES SECTION =====
+.services {
+  &__container {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    border: 1.5px solid rgba($color: #996830, $alpha: 0.3);
+
+    &-icon {
+      width: 65px;
+    }
+
+    &-title {
+      font-family: $font-title;
+      font-size: 32px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      line-height: $leading-title;
+      margin-bottom: $margin-1;
+    }
+
+    &-text {
+      color: $grey-color;
+      line-height: $leading-text;
     }
   }
 }
