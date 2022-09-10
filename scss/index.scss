@@ -259,7 +259,7 @@ img {
 
 // ===== AWARDS SECTION =====
 .awards {
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   background-color: $black-color;
 
   &__group {
@@ -281,5 +281,18 @@ img {
       font-size: 18px;
       color: rgba($color: #ffffff, $alpha: 0.7);
     }
+  }
+}
+
+// ===== ABOUT SECTION =====
+.about {
+  &__container {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__data,
+  &__img {
+    justify-self: center;
   }
 }
