@@ -424,3 +424,101 @@ img {
     justify-self: flex-start;
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding: 8rem 0 2rem;
+
+  &__container {
+    display: grid;
+    gap: 6rem;
+  }
+
+  &__group {
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__data {
+    &-button {
+      font-family: $font-title;
+      font-size: 32px;
+      font-style: italic;
+      color: $brown-color;
+      text-decoration: underline;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 2rem;
+
+    &-title {
+      font-family: $font-title;
+      font-size: 28px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-text {
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+
+    &-contact {
+      font-family: $font-title;
+      font-size: 28px;
+      font-size: $font-semibold;
+      color: $brown-color;
+      margin-top: $margin-0-5;
+    }
+  }
+
+  &__copy {
+    display: grid;
+    gap: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1.5px solid rgba($color: #2c2c2c, $alpha: 0.3);
+
+    &-text {
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+
+    &-developer {
+      color: $brown-color;
+    }
+
+    &-data {
+      display: grid;
+    }
+
+    &-sosmed {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      padding: 0.5rem;
+      border: 1.5px solid rgba($color: #2c2c2c, $alpha: 0.3);
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: $brown-color;
+      transition: $transition-400;
+
+      &:hover {
+        background-color: $brown-color;
+        color: $white-color;
+        border-color: $brown-color;
+      }
+    }
+  }
+}
