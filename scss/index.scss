@@ -158,6 +158,11 @@ img {
   z-index: $z-fixed;
   transition: $transition-400;
 
+  // sticky header
+  &.sticky-action {
+    box-shadow: 0 4px 12px rgba($color: #2c2c2c, $alpha: 0.2);
+  }
+
   &__container {
     height: $header-height;
     display: flex;
