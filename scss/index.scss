@@ -532,3 +532,25 @@ img {
     }
   }
 }
+
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -100%;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: $brown-color;
+  font-size: 1.5rem;
+  color: $white-color;
+  transition: $transition-400;
+
+  // scrollup action
+  &.scrollup-action {
+    bottom: 3rem;
+  }
+}
