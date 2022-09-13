@@ -343,6 +343,10 @@ img {
     gap: 2rem;
   }
 
+  &__data {
+    justify-self: center;
+  }
+
   &__group {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -552,5 +556,20 @@ img {
   // scrollup action
   &.scrollup-action {
     bottom: 3rem;
+  }
+}
+
+// ===== MEDIA QUEIRIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__container,
+  .about__data,
+  .services__data,
+  .works__data {
+    width: 400px;
+  }
+
+  .about__img {
+    width: 400px;
   }
 }
