@@ -131,7 +131,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  padding: 1rem 2.5em;
+  padding: 1rem 2rem;
   background-color: $brown-color;
   font-weight: $font-semibold;
   text-transform: uppercase;
@@ -604,10 +604,6 @@ img {
   }
 
   .header {
-    &__container {
-      position: relative;
-    }
-
     &__menu {
       display: flex;
       align-items: center;
@@ -615,9 +611,6 @@ img {
     }
 
     &__list {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
       flex-direction: row;
     }
 
