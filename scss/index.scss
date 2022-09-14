@@ -774,3 +774,18 @@ img {
   background-color: $brown-color;
   color: $white-color;
 }
+
+// ===== ::-WEBKIT-SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($color: #2c2c2c, $alpha: 0.1);
+
+  &-thumb {
+    background-color: rgba($color: #2c2c2c, $alpha: 0.2);
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: rgba($color: #2c2c2c, $alpha: 0.3);
+    }
+  }
+}
