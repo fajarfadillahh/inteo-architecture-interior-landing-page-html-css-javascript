@@ -768,3 +768,9 @@ img {
     }
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: $brown-color;
+  color: $white-color;
+}
