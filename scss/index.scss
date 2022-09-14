@@ -665,3 +665,31 @@ img {
     gap: 5rem;
   }
 }
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 2rem;
+    }
+  }
+
+  .footer__copy {
+    &-data {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &-eyebrow {
+      margin-bottom: 0;
+    }
+  }
+}
