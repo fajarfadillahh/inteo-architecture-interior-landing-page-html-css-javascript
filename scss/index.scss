@@ -700,9 +700,15 @@ img {
 
 // width 1200px
 @media screen and (min-width: 1200px) {
-  .home__title {
-    font-size: 76px;
-    width: 700px;
+  .home {
+    &__title {
+      font-size: 76px;
+      width: 700px;
+    }
+
+    &__button {
+      left: -20%;
+    }
   }
 
   .awards {
